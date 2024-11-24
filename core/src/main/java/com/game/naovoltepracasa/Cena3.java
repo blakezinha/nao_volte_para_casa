@@ -141,6 +141,7 @@ public class Cena3 extends Cena {
         this.ended = false;
         this.estado = 0;
         this.setTextoAtual(this.textos.get(Texto.C3_INICIAL));
+        this.encontraChave = false;
     }
 
     @Override

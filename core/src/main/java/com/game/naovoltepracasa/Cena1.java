@@ -20,7 +20,7 @@ public class Cena1 extends Cena {
         // Adiciona todos os textos da cena
         this.textos.put(Texto.C1_INICIAL, "Você acorda dentro de um carro amassado e sente um leve cheiro de gasolina." +
         " Tudo está escuro ao seu\nredor, exceto por alguns raios de luz passando pelos vidros quebrados. Você verifica o seu bolso e\nencontra uma carteira." +
-        "Você abre a carteira e encontra um documento. Está sujo, mas ainda legível:\n'Elizabeth, 33 anos.' O sobrenome está parcialmente apagado.");
+        " Você abre a carteira e encontra um documento. Está sujo, mas ainda legível:\n'Elizabeth, 33 anos.' O sobrenome está parcialmente apagado.");
         this.textos.put(Texto.C1_CARRO, "Há uma lanterna caída no banco");
         this.textos.put(Texto.C1_CARRO_LANTERNA,"Você pega a lanterna. Ela não funciona. Parece que precisa de baterias.");
         this.textos.put(Texto.C1_TRILHA,"Você sai do carro e percebe uma trilha de terra que parece levar até uma casa próxima.");

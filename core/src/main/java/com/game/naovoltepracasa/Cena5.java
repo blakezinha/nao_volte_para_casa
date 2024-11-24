@@ -27,7 +27,7 @@ public class Cena5 extends Cena {
         // Adiciona todos os textos da cena
         this.textos.put(Texto.C5_INICIAL, "Você está em um quarto completamente escuro. O ar está pesado e cheira a mofo. Algo parece\n" +
         "observar você nas sombras. Está muito escuro. Você não consegue distinguir nada. " + 
-        "Você liga a lanterna e\nilumina o quarto.Há uma cama com dois corpos abraçados cobertos por um lençol, " +
+        "Você liga a lanterna e\nilumina o quarto. Há uma cama com dois corpos abraçados cobertos por um lençol, " +
         "um armário encostado\nna parede e uma mesa de cabeceira com uma carta.");
         this.textos.put(Texto.C5_CORPOS, "Os corpos parecem estar dormindo, mas estão rígidos e frios. Um adulto abraça uma criança.\n" +
         "Algo sobre eles faz seu coração apertar.");

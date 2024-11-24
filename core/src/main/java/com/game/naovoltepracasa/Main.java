@@ -8,6 +8,7 @@ import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.utils.TimeUtils;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 
@@ -29,6 +30,7 @@ public class Main extends ApplicationAdapter {
     private Stage stage;
     private Set<Objeto> objetos = new HashSet<>();
     private Long lastTime;
+    private Music music;
 
     @Override
     public void create() {
@@ -51,12 +53,17 @@ public class Main extends ApplicationAdapter {
         this.bitmapDefatult = new BitmapFont();
         this.bitmapDefatult.getData().setScale(1.5f);
 
+        this.music = Gdx.audio.newMusic(Gdx.files.internal("musica.mp3"));
+        this.music.setLooping(true);
+        this.music.setVolume(.3f);
+        this.music.play();
+
         // Cria e adiciona as cenas
-        cenas.add(new Cena1(this.stage, this.bitmapDefatult, this.objetos));
-        cenas.add(new Cena2(this.stage, this.bitmapDefatult, this.objetos));
-        cenas.add(new Cena3(this.stage, this.bitmapDefatult, this.objetos));
-        cenas.add(new Cena4(this.stage, this.bitmapDefatult, this.objetos));
-        cenas.add(new CenaDupla(new Cena5(this.stage, this.bitmapDefatult, this.objetos), 
+        this.cenas.add(new Cena1(this.stage, this.bitmapDefatult, this.objetos));
+        this.cenas.add(new Cena2(this.stage, this.bitmapDefatult, this.objetos));
+        this.cenas.add(new Cena3(this.stage, this.bitmapDefatult, this.objetos));
+        this.cenas.add(new Cena4(this.stage, this.bitmapDefatult, this.objetos));
+        this.cenas.add(new CenaDupla(new Cena5(this.stage, this.bitmapDefatult, this.objetos), 
                                 new Cena6( this.stage, this.bitmapDefatult, this.objetos), 
                                 this.stage, 
                                 this.bitmapDefatult, 
