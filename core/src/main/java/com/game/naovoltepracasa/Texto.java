@@ -1,0 +1,30 @@
+package com.game.naovoltepracasa;
+
+public enum Texto {
+    C1_INICIAL,
+    C1_CARRO,
+    C1_CARRO_LANTERNA,
+    C1_TRILHA,
+    C2_INICIAL,
+    C2_CHAVE,
+    C2_PLACA,
+    C2_JARDIM,
+    C2_PORTA,
+    C3_INICIAL,
+    C3_VASO,
+    C3_COVA,
+    C3_PA,
+    C3_CASA,
+    C4_INICIAL,
+    C4_QUADRO,
+    C5_INICIAL,
+    C5_CORPOS,
+    C5_CARTA,
+    C5_ARMARIO,
+    C5_CAIXA,
+    C5_CONTINUAR,
+    C5_FINAL,
+    C6_INICIAL,
+    C6_CAIXA,
+    C6_CONTINUAR;
+}
